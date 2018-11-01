@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+*.idea
+*.iml
+MXBlog_Api/target/
+MXBlog_Api/*.mvn
+MXBlog_Api/mvnw
+MXBlog_Api/mvnw.cmd
+MXBlog_Common/target/
+MXBlog_Dao/target/
+MXBlog_Model/target/
+MXBlog_Service/target/
+out
+gen
