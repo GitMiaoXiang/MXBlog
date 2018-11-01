@@ -16,7 +16,7 @@ mybatis:
 
 #通用mapper
 mapper:
-  mappers:
+  mappers: com.mx.dao.base.MyMapper
   not-empty: false
   identity: MYSQL
 

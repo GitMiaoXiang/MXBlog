@@ -1,9 +1,9 @@
-package redis.impl;
+package com.mx.dao.redis.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Repository;
-import redis.IRedisDao;
+import com.mx.dao.redis.IRedisDao;
 
 import java.util.List;
 import java.util.Map;
