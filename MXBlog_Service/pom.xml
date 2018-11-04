@@ -18,11 +18,6 @@
             <artifactId>MXBlog_Dao</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.mx.blog</groupId>
-            <artifactId>MXBlog_Common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
 

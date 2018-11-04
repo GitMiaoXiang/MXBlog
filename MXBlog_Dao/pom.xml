@@ -15,13 +15,6 @@
     <dependencies>
 
 
-        <!--分页插件 -->
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>${pagehelper.version}</version>
-        </dependency>
-
         <!-- MySql数据库驱动 -->
         <dependency>
             <groupId>mysql</groupId>
@@ -29,9 +22,10 @@
             <version>${mysql.version}</version>
         </dependency>
 
+
         <dependency>
             <groupId>com.mx.blog</groupId>
-            <artifactId>MXBlog_Model</artifactId>
+            <artifactId>MXBlog_Common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

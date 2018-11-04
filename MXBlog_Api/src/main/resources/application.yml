@@ -7,8 +7,8 @@ spring:
 
 mybatis:
 #  配置xml 的扫描路径
-#  mapper-locations: classpath*:org/spring/boot/mapper/*.xml
-#  check-com.mx.model.model.config-location: true
+#  base-locations: classpath*:org/spring/boot/base/*.xml
+#  check-com.mx.blog.blog.config-location: true
 #  type-aliases-package: com.maoxiang.springboot_config.entity
   configuration:
 #     开启驼峰命名检查
@@ -16,7 +16,7 @@ mybatis:
 
 #通用mapper
 mapper:
-  mappers: com.mx.dao.base.MyMapper
+  mappers: com.mx.blog.base.mapper.MyMapper
   not-empty: false
   identity: MYSQL
 
@@ -54,7 +54,7 @@ logging:
 #  注：二者不能同时使用，如若同时使用，则只有logging.file生效
 #  默认情况下，日志文件的大小达到10MB时会切分一次，产生新的日志文件，默认级别为：ERROR、WARN、INFO
 #    path: ../tomcatlogs/
-#    file: ../tomcatlogs/info.com.mx.model.model.log
+#    file: ../tomcatlogs/info.com.mx.blog.blog.log
 #    logging.level：日志级别控制前缀，*为包名或Logger名
 #    LEVEL：选项TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF
 #    level:

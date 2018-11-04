@@ -5,8 +5,8 @@
 
     <!-- 设置log日志存放地址 -->
     <!--（改） 单环境设置 -->
-    <!--<property name="LOG_HOME_CON" value="D:/com.mx.commonon.model.log/controller" />-->
-    <!--<property name="LOG_HOME_SER" value="D:/com.mx.commonon.model.log/com.mx.commonon.model.service" />-->
+    <!--<property name="LOG_HOME_CON" value="D:/com.mx.commonon.blog.log/controller" />-->
+    <!--<property name="LOG_HOME_SER" value="D:/com.mx.commonon.blog.log/com.mx.commonon.blog.blog" />-->
 
     <!-- 多环境设置 （如果你需要设置区分 生产环境，测试环境...）-->
     <!-- 如果需要设置多环境的配置，只设置以下注释内容是不够的，还需要给每个环境设置对应的配置文件如（application-dev.properties）-->
@@ -14,15 +14,15 @@
         <!--controller储存入径-->
          <property name="LOG_HOME_CON" value="/home/logger/controller" />
         <!--service层存储入径-->
-         <property name="LOG_HOME_SER" value="/home/logger/com.mx.model.common.service" />
+         <property name="LOG_HOME_SER" value="/home/logger/service" />
      </springProfile>
      <springProfile name="dev">
          <property name="LOG_HOME_CON" value="/home/logger/controller" />
-         <property name="LOG_HOME_SER" value="/home/logger/com.mx.model.common.service" />
+         <property name="LOG_HOME_SER" value="/home/logger/service" />
      </springProfile>
      <springProfile name="test">
          <property name="LOG_HOME_CON" value="D:/logger/controller" />
-         <property name="LOG_HOME_SER" value="D:/logger/com.mx.model.common.service" />
+         <property name="LOG_HOME_SER" value="D:/logger/service" />
      </springProfile>
 
 
@@ -39,7 +39,7 @@
     <appender name="ROLLING_FILE_CONTROLLER" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志文件输出的文件名 ,每天保存（侧翻）一次 -->
-            <FileNamePattern>${LOG_HOME_CON}/%d{yyyy-MM-dd}.com.mx.model.common.log</FileNamePattern>
+            <FileNamePattern>${LOG_HOME_CON}/%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数 -->
             <MaxHistory>180</MaxHistory>
         </rollingPolicy>
@@ -57,7 +57,7 @@
     <appender name="ROLLING_FILE_SERVICE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志文件输出的文件名 ,每天保存（侧翻）一次 -->
-            <FileNamePattern>${LOG_HOME_SER}/%d{yyyy-MM-dd}.com.mx.model.common.log</FileNamePattern>
+            <FileNamePattern>${LOG_HOME_SER}/%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数 -->
             <MaxHistory>180</MaxHistory>
         </rollingPolicy>
@@ -74,12 +74,12 @@
     <!-- （改）过滤器，可以指定哪些包，哪个记录到等级， -->
     <!-- 运用的场景比如，你只需要com.demo.controller包下的error日志输出。定义好name="com.demo.controller" level="ERROR" 就行了 -->
     <!--Controller层日志输出-->
-    <logger name="com.maoxiang.springboot_config.aop" level="INFO">
+    <logger name="com.mx.blog.controller" level="INFO">
         <appender-ref ref="ROLLING_FILE_CONTROLLER" />
     </logger>
 
     <!--Service层日志输出-->
-    <logger name="com.maoxiang.springboot_config.service" level="INFO">
+    <logger name="com.mx.blog.service" level="INFO">
         <appender-ref ref="ROLLING_FILE_SERVICE" />
     </logger>
 
