@@ -1,6 +1,6 @@
 package com.mx.blog.controller;
 
-import com.mx.blog.IUserService;
+import com.mx.blog.service.IUserService;
 import com.mx.blog.cosntenum.ResponseEnum;
 import com.mx.blog.entity.User;
 import com.mx.blog.result.ResultData;

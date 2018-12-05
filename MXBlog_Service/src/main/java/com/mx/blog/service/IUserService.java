@@ -1,4 +1,4 @@
-package com.mx.blog;
+package com.mx.blog.service;
 
 import com.mx.blog.base.service.IBaseService;
 import com.mx.blog.entity.User;
@@ -10,4 +10,5 @@ import com.mx.blog.entity.User;
  * Modified By:
  */
 public interface IUserService extends IBaseService<User> {
+
 }

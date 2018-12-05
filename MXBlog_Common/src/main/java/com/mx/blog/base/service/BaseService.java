@@ -2,7 +2,6 @@ package com.mx.blog.base.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.mx.blog.annotation.ServiceOperation;
 import com.mx.blog.base.mapper.MyMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import tk.mybatis.mapper.entity.Example;
@@ -36,7 +35,6 @@ public abstract class BaseService<T> implements IBaseService<T> {
      *
      * @return
      */
-    @ServiceOperation
     public List<T> queryAll() {
         return mapper.select(null);
     }
