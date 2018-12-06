@@ -1,3 +1,5 @@
+-- noinspection SqlNoDataSourceInspectionForFile
+
 /*
  Navicat MySQL Data Transfer
 
@@ -66,7 +68,7 @@ CREATE TABLE `images`  (
   `arid` varchar(16) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '文章Id',
   `is_audit` int(11) NULL DEFAULT NULL COMMENT '是否审核',
   `is_top` int(1) NULL DEFAULT NULL COMMENT '是否置顶',
-  `type` int(11) NULL DEFAULT NULL COMMENT '1 文章图片 2 摄影',
+  `type` int(11) NULL DEFAULT NULL COMMENT '1 文章图片 2 摄影',a
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `fk_arimages`(`arid`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 85 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;

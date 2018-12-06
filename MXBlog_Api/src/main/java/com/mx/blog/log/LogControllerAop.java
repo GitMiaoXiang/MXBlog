@@ -1,4 +1,4 @@
-package com.mx.blog.aop;
+package com.mx.blog.log;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;

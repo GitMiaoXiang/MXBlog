@@ -21,6 +21,7 @@ public interface IBaseService<T> {
      *
      * @return
      */
+    @ServiceOperation
     List<T> queryAll();
 
     /**
