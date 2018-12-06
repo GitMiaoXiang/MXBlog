@@ -1,4 +1,4 @@
-package com.mx.blog.result;
+package com.mx.blog.entity.cto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.mx.blog.cosntenum.ResponseEnum;
@@ -48,4 +48,6 @@ public class ResultData<T> {
         this.status = responseMessage.getStatus();
         this.message = responseMessage.getMessage();
     }
+
+
 }

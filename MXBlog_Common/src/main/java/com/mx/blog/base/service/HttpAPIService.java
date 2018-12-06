@@ -3,7 +3,7 @@ package com.mx.blog.base.service;
 import com.mx.blog.utils.ResultUtil;
 import com.mx.blog.cosntenum.ResponseEnum;
 import com.mx.blog.result.HttpResult;
-import com.mx.blog.result.ResultData;
+import com.mx.blog.entity.cto.ResultData;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;

@@ -2,8 +2,8 @@ package com.mx.blog.controller;
 
 import com.mx.blog.service.IUserService;
 import com.mx.blog.cosntenum.ResponseEnum;
-import com.mx.blog.entity.User;
-import com.mx.blog.result.ResultData;
+import com.mx.blog.entity.model.User;
+import com.mx.blog.entity.cto.ResultData;
 import com.mx.blog.utils.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

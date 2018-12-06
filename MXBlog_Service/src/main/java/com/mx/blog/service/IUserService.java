@@ -1,7 +1,7 @@
 package com.mx.blog.service;
 
 import com.mx.blog.base.service.IBaseService;
-import com.mx.blog.entity.User;
+import com.mx.blog.entity.model.User;
 
 /**
  * @Author:上官名鹏

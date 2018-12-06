@@ -1,7 +1,7 @@
 package com.mx.blog.mapper;
 
 import com.mx.blog.base.mapper.MyMapper;
-import com.mx.blog.entity.Article;
+import com.mx.blog.entity.model.Article;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

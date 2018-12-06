@@ -1,6 +1,6 @@
 package com.mx.blog.base.service;
 
-import com.mx.blog.result.ResultData;
+import com.mx.blog.entity.cto.ResultData;
 
 import java.util.Map;
 

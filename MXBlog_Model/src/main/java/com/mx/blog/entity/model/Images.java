@@ -1,4 +1,4 @@
-package com.mx.blog.entity;
+package com.mx.blog.entity.model;
 
 import lombok.Data;
 

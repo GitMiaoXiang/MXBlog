@@ -2,7 +2,7 @@ package com.mx.blog.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.mx.blog.cosntenum.ResponseEnum;
-import com.mx.blog.result.ResultData;
+import com.mx.blog.entity.cto.ResultData;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -20,6 +20,18 @@ public class ResultUtil {
      * @return ResultData
      */
     public static <T> ResultData<T> successResult(T data, ResponseEnum responseErrorEnum){
+        return generateResult(data, responseErrorEnum);
+    }
+
+    /**
+     *生成响应成功(带正文)的结果
+     * @return ResultData
+     */
+    public static ResultData successResult(ResponseEnum responseErrorEnum){
+        return generateResult(null, responseErrorEnum);
+    }
+
+    private static <T> ResultData<T> generateResult(T data, ResponseEnum responseErrorEnum){
         ResultData<T> result = new ResultData<>();
         result.setResponseMessage(responseErrorEnum);
         result.setData(data);

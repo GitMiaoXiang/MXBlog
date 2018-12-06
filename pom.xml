@@ -75,6 +75,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!--分页插件 -->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
@@ -149,31 +155,31 @@
 
     <build>
         <!--<plugins>-->
-            <!--<plugin>-->
-                <!--<groupId>org.springframework.boot</groupId>-->
-                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
-                <!--&lt;!&ndash;&lt;!&ndash; 指定该Main Class为全局的唯一入口 &ndash;&gt;&ndash;&gt;-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<goals>-->
-                            <!--<goal>repackage</goal>&lt;!&ndash;可以把依赖的包都打包到生成的Jar包中&ndash;&gt;-->
-                        <!--</goals>-->
-                        <!--&lt;!&ndash;可以生成不含依赖包的不可执行Jar包&ndash;&gt;-->
-                        <!--<configuration>-->
-                            <!--&lt;!&ndash;<classifier>exec</classifier>&ndash;&gt;-->
-                            <!--&lt;!&ndash; 表示复制的jar文件去掉版本信息 &ndash;&gt;-->
-                            <!--&lt;!&ndash;<tripVersion>true</tripVersion>&ndash;&gt;-->
-                        <!--</configuration>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
-            <!--<plugin>-->
-                <!--<artifactId>maven-compiler-plugin</artifactId>-->
-                <!--<configuration>-->
-                    <!--<source>1.8</source>-->
-                    <!--<target>1.8</target>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
+        <!--<plugin>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+        <!--&lt;!&ndash;&lt;!&ndash; 指定该Main Class为全局的唯一入口 &ndash;&gt;&ndash;&gt;-->
+        <!--<executions>-->
+        <!--<execution>-->
+        <!--<goals>-->
+        <!--<goal>repackage</goal>&lt;!&ndash;可以把依赖的包都打包到生成的Jar包中&ndash;&gt;-->
+        <!--</goals>-->
+        <!--&lt;!&ndash;可以生成不含依赖包的不可执行Jar包&ndash;&gt;-->
+        <!--<configuration>-->
+        <!--&lt;!&ndash;<classifier>exec</classifier>&ndash;&gt;-->
+        <!--&lt;!&ndash; 表示复制的jar文件去掉版本信息 &ndash;&gt;-->
+        <!--&lt;!&ndash;<tripVersion>true</tripVersion>&ndash;&gt;-->
+        <!--</configuration>-->
+        <!--</execution>-->
+        <!--</executions>-->
+        <!--</plugin>-->
+        <!--<plugin>-->
+        <!--<artifactId>maven-compiler-plugin</artifactId>-->
+        <!--<configuration>-->
+        <!--<source>1.8</source>-->
+        <!--<target>1.8</target>-->
+        <!--</configuration>-->
+        <!--</plugin>-->
         <!--</plugins>-->
     </build>
 

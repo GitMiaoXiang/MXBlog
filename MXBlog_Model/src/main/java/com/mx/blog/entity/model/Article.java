@@ -1,4 +1,4 @@
-package com.mx.blog.entity;
+package com.mx.blog.entity.model;
 
 
 import lombok.Data;
@@ -29,7 +29,7 @@ public class Article {
 
     private String isAudit;
 
-    private String describe;
+    private String arDesc;
 
-    private String content;
+    private String arContent;
 }

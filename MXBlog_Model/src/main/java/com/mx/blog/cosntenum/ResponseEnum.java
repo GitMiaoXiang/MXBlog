@@ -8,8 +8,9 @@ package com.mx.blog.cosntenum;
 public enum ResponseEnum {
 
     SYSTEM_EXCEPTION(0, 0, "系统异常"),
-    SUCCESS(1, 1, "请求成功"),
-    FAILED(0, 2, "请求失败"),
+    SUCCESS(1, 1, "成功"),
+    FAILED(1, 0, "失败"),
+    SAVE_FAILED(1,0,"保存失败"),
     BUSINESS_EXCEPTION(0, 3, "业务异常");
 
     private int code;

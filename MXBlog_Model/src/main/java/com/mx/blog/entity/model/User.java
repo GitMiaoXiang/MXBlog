@@ -1,7 +1,8 @@
-package com.mx.blog.entity;
+package com.mx.blog.entity.model;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.Email;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -23,7 +24,7 @@ public class User {
 
     private String pwd;
 
-    private Date createdate;
+    private Date createDate;
 
     private String avatar;
 
